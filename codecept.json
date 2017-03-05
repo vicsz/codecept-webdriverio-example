@@ -2,7 +2,7 @@
   "tests": "./*_test.js",
   "timeout": 10000,
   "output": "./output",
-  "helpers": {},
+  "helpers": { "WebDriverIO" : { "url": "http://www.wikipedia.org", "browser": "chrome" }},
   "include": {
     "I": "./steps_file.js"
   },
