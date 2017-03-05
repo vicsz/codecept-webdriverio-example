@@ -2,8 +2,10 @@
 Feature('Wikipedia');
 
 Scenario('Wikipedia Home Page Test', (I, homePage) => {
+	
 	I.amOnPage('/');
-  	I.seeInTitle('Wikipedia');
+  	I.confirmOnPage(homePage);
+
   	I.invokeCustomMethodFromI();
   	homePage.doSearch('Toronto');
 });

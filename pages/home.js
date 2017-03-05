@@ -13,5 +13,9 @@ module.exports = {
   	I.say('Performing search for ' + query);
   	I.fillField('search', query);
   	I.click('[type=submit]');
+  },
+
+  confirmOnPage(){
+  	I.seeInTitle('Wikipedia');
   }
 }
