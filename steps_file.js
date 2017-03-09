@@ -14,7 +14,7 @@ module.exports = function() {
       	this.seeInTitle('Wikipedia');
     },
 
-    confirmOnPage(page){
+    confirmOnPage: function(page){
     	this.say('Confirm page ' + page);
     	page.confirmOnPage();
     }
